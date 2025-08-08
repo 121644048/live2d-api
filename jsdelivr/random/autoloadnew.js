@@ -2,7 +2,7 @@
 // const live2d_path =
 //   "https://fastly.jsdelivr.net/gh/nova1751/live2d-widget@latest/";
 
-const live2d_path = 'https://livenew.sunboy.ltd/';
+const live2d_pathnew = 'https://livenew.sunboy.ltd/';
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -27,15 +27,15 @@ function loadExternalResource(url, type) {
 // 加载 waifu.css live2d.min.js waifu-tips.js
 if (screen.width >= 768) {
   Promise.all([
-    loadExternalResource(live2d_path + 'live2dnew.min.js', 'js'),
-    loadExternalResource(live2d_path + 'jsdelivr/random/waifu-tipsnew.js', 'js'),
+    loadExternalResource(live2d_pathnew + 'live2dnew.min.js', 'js'),
+    loadExternalResource(live2d_pathnew + 'jsdelivr/random/waifu-tipsnew.js', 'js'),
   ]).then(() => {
     // 配置选项的具体用法见 README.md
     initWidget({
-      waifuPath: live2d_path + 'waifu-tipsnew.json',
+      waifuPath: live2d_pathnew + 'waifu-tipsnew.json',
 
       // apiPath: "https://live2d.fghrsh.net/api/",
-      cdnPath: live2d_path,
+      cdnPath: live2d_pathnew,
 
       tools: [
         'hitokoto',
