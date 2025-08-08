@@ -46,6 +46,7 @@ if (screen.width >= 768) {
         'info',
         'quit',
       ],
+      drag: true,
     });
   });
 }
