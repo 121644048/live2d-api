@@ -35,7 +35,7 @@ if (screen.width >= 768) {
       waifuPath: live2d_pathnew + 'waifu-tipsnew.json',
 
       // apiPath: "https://live2d.fghrsh.net/api/",
-      cdnPath: live2d_pathnew,
+      cdnPathnew: live2d_pathnew,
 
       tools: [
         'hitokoto',
